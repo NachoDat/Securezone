@@ -13,7 +13,7 @@
            flex-direction: column;
            display: flex;
             height: 100px;
-            background-color: #763626;
+            background-color: gray;
            
        }
        .Logo{
@@ -88,7 +88,7 @@
     @media only screen and (min-width:800px){
         #Navegator{
             display: flex;
-            background-color:#336B87 ;
+            background-color:white ;
             justify-content: space-between;
         }
 
@@ -105,7 +105,7 @@
             justify-content: center;
             align-items: center;
            height: 50%;
-            background-color: white;
+            
             font-size: 20px;
             padding: 0px 10px 0px 10px ;
         }
