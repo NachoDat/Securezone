@@ -406,70 +406,40 @@ li{
 
 }
 /*------------------------------------------------------------Contact----------------------------------------------------------------*/
-.ContactBody{
-    background-color: cadetblue;
+@media only screen and (max-width:576px){
+    #FormBox{
+        display: flex;
+        justify-content: center;
+        background-color: gray;
+    }
+    #FormItself{
+        display: flex;
+        justify-content: center;
+    }
+    .ContactForm{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #FormLabel{
+        text-align: center;
+    }
+    .FormItem{
+        align-self: center;
+        margin: 2%;
+    }
 }
-.ContactNav{
-    background-color: black;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+ @media only screen and (min-width:992px) {
+    #FormItself{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    body{
+        background-color: gray;
+    }
 
-}
-.ContactNavItems{
-    display: inline;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif ;
-    padding-right: 20px;
-
-}
-.ContactNavTitle{
-    font-weight: bold;
-    font-family:  'Poppins', sans-serif;
-    font-size: 40px;
-    display: inline;
-    margin-right: 20px;
-    background-color: darkslategrey;
-    padding-top: 20px ;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    color: white;
-
-
-}
-.ContactMain{
-    padding-bottom: 500px;
-}
-.ContactMainText{
-display: inline;
-
-}
-.ContactForm{
-    background-color: gray;
-    position: absolute;
-    left: 2px;
-    display: inline-block;
-    top: 150px;
-    padding: 20px;
-    font-family:'Poppins', sans-serif ;
+ }
     
-}
-.FormItem{
-    display: block;
-}
-#casillaemail{
-    margin-bottom: 10px;
-
-}
-#TextArea{
-    margin-bottom: 10px;
-
-
-}
-.ContactMainText{
-    font-family:'Poppins', sans-serif ;
-    font-weight: bold;
-    text-align: center;
-    color: white    ;
-
-}
+ 
