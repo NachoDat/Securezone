@@ -19,7 +19,7 @@ li{
 }
 #IndexBody{
 
-    
+    background-color: #AAE6D6;
     width: 100%;
 }
 
@@ -62,7 +62,73 @@ li{
     #IndexMain{
         height: 800px;
     }
+    
+    #cardBox{
+      background-color: gray;
+    }
+    #imageCardMargin{
+        margin-top:10px ;
+        border-radius: 15px;
+    }
+    #cardBox:hover {
+        background-color: rgb(170, 186, 230);
+    }
+    #cardBox2:hover{
+        background-color: rgb(170, 186, 230);
+    }
+
+    #cardBox2{
+        background-color: gray;
+        position: relative;
+        top: 50px;
+    }
+    .Footer{
+        background-color: black;
+    }
+    .FooterTitle{
+        color: white;
+    }
 }
+
+@media only screen and (min-width:992px){
+    #Navegator{
+      
+        
+    }
+    #NavList{
+        display: flex;
+        flex-direction:row ;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        
+    }
+
+    .NavegatorList{
+        padding: 1%;
+        text-align: center;
+        margin: 2%;
+        
+        }
+        .NavegatorList:hover{
+            width: 20%;
+        }
+
+        .Footer{
+            
+            background-color: black;
+            height: 100px;
+        }
+        .FooterTitle{
+            
+            color: white;
+        }
+        .FooterAncor{
+            background-color:rgb(170, 186, 230) ;
+            border-radius: 10px;
+            padding: 1%;
+        }
+    }
 
 
 
