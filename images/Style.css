@@ -91,10 +91,7 @@ li{
 }
 
 @media only screen and (min-width:992px){
-    #Navegator{
-      
-        
-    }
+
     #NavList{
         display: flex;
         flex-direction:row ;
