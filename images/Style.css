@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*---------------------------------------------------------------Index-------------------------------------------------------------------------*/
+/*Changes out of @media*/
+#IndexBody {
+  background-color: #AAE6D6;
+  width: 100%; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.NavegatorList {
+  background-color: #aabae6; }
+  .NavegatorList li {
+    list-style: none; }
+
+@media only screen and (max-width: 576px) {
+  header {
+    display: flex;
+    justify-content: center;
+    height: 225px; }
+    header #Navegator {
+      height: 200px;
+      width: 100%; }
+      header #Navegator #NavList {
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        header #Navegator #NavList .NavegatorList {
+          padding: 1%;
+          text-align: center;
+          width: 80%; }
+  .textCenter {
+    text-align: center; }
+  #IndexMain {
+    height: 800px; }
+    #IndexMain #IndexMainTitle {
+      text-align: center;
+      padding: 2%; }
+  #cardBox {
+    background-color: gray; }
+    #cardBox #imageCardMargin {
+      margin-top: 10px;
+      border-radius: 15px; }
+      #cardBox #imageCardMargin #cardBox:hover {
+        background-color: #aabae6; }
+  #cardBox2 {
+    background-color: gray;
+    position: relative;
+    top: 50px; }
+    #cardBox2 #cardBox2:hover {
+      background-color: #aabae6; }
+  .Footer {
+    background-color: black; }
+    .Footer .FooterTitle {
+      color: white; } }
+
+@media only screen and (min-width: 992px) {
+  #NavList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gray; }
+    #NavList .NavegatorList {
+      padding: 1%;
+      text-align: center;
+      margin: 2%; }
+      #NavList .NavegatorList .NavegatorList:hover {
+        width: 20%; }
+  .Footer {
+    background-color: black;
+    height: 100px; }
+    .Footer .FooterTitle {
+      color: white; }
+    .Footer .FooterAncor {
+      background-color: #aabae6;
+      border-radius: 10px;
+      padding: 1%; } }
+
+/*----------------------------------------------------------AcercaDeNosotros-------------------------------------------------------------*/
+/*-----------VistaMobile-------------*/
+#AboutUsMain {
+  height: 500px; }
+
+@media only screen and (max-width: 400px) {
+  .AboutUsNav {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background-color: #336B87; }
+  #AboutUsList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: solid black 1px;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white; }
+  .AboutUsNavItems {
+    padding: 3%; }
+  #AboutUsMain {
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-columns: 50%  50%;
+    grid-template-areas: "a1  a1" "a2  a3" "a2  a4"; }
+  #AboutUsMainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #AboutUsMainImg {
+    grid-area: a2;
+    height: 100%;
+    width: 100%; }
+  #AboutUsMainText1 {
+    grid-area: a3; }
+  .AboutUsMainText {
+    grid-area: a4; } }
+
+@media only screen and (min-width: 400px) {
+  .AboutUsNav {
+    background-color: #336B87;
+    display: flex; }
+  #AboutUsList {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black; }
+  #AboutUsMainImg {
+    width: 50%;
+    height: 100%; }
+  #AboutUsMainImgBox {
+    display: flex;
+    justify-content: center;
+    grid-area: a2; }
+  #AboutUsMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 40% 20% 20%;
+    grid-template-areas: "a1 a1 a1 a1" "a2 a2 a2 a2" "a3 a4 a5 a6" "a7 a7 a7 a7"; }
+  #AboutUsMainText1 {
+    grid-area: a7; }
+  #AboutUsMainImg {
+    grid-area: a2; }
+  #AboutUsMainImg1 {
+    grid-area: a3; }
+  #AboutUsMainImg2 {
+    grid-area: a4; }
+  #AboutUsMainImg3 {
+    grid-area: a5; }
+  #AboutUsMainImg4 {
+    grid-area: a6; }
+  .AboutUsImage {
+    border: solid 2px black; } }
+
+/*---------------------------uwu------------------------------BuyTickets---------------------------------------------------*/
+/*Nav*/
+.BuyTicketNav {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.BuyTicketTitle {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  display: inline;
+  margin-right: 20px;
+  background-color: darkslategrey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  color: white; }
+
+/*Main*/
+.BuyTicketItems {
+  display: inline;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 20px; }
+
+.BuyTicketMain {
+  margin-bottom: 500px; }
+
+.BuyTicketMainTitle {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 200px; }
+
+.BuyTicketMainText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white; }
+
+/*--------------------------------------------------------------------TouristicSpots-------------------------------------------*/
+/*Nav*/
+.TourSpotNav {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.TourSpotNavTitle {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  display: inline;
+  margin-right: 20px;
+  background-color: darkslategrey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  color: white; }
+
+.TourSpotNavItems {
+  display: inline;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 20px; }
+
+/*Main*/
+.TourSpotMain {
+  margin-bottom: 500px; }
+
+.TourSpotMainTitle {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif; }
+
+.TourSpotMainText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white; }
+
+/*------------------------------------------------------------Contact----------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+  #FormBox {
+    display: flex;
+    justify-content: center;
+    background-color: gray; }
+  #FormItself {
+    display: flex;
+    justify-content: center; }
+  .ContactForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  #FormLabel {
+    text-align: center; }
+  .FormItem {
+    align-self: center;
+    margin: 2%; } }
+
+@media only screen and (min-width: 992px) {
+  #FormItself {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  body {
+    background-color: gray; } }
