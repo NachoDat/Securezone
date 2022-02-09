@@ -2,7 +2,7 @@
 
 /*---------------------------------------------------------------Index-------------------------------------------------------------------------*/
  
-
+$color_fondo_navegador: rgb(170, 186, 230);
 /*Changes out of @media*/
 
 #IndexBody{
@@ -15,13 +15,14 @@ img{
     height: 100%;
 }
 
+li{
+    list-style: none;
+}
 
 
 .NavegatorList{
-    background-color: rgb(170, 186, 230);
-        li{
-            list-style: none;
-        }
+    background-color: $color-fondo_navegador;
+        
 }
 
 
@@ -78,7 +79,7 @@ img{
                 border-radius: 15px;
 
                     #cardBox:hover {
-                    background-color: rgb(170, 186, 230);
+                    background-color: $color-fondo_navegador;
                     }
             }
     
@@ -90,7 +91,7 @@ img{
         position: relative;
         top: 50px;
             #cardBox2:hover{
-                background-color: rgb(170, 186, 230);
+                background-color: $color-fondo_navegador;
             }
     }
     .Footer{
@@ -104,23 +105,54 @@ img{
 
 @media only screen and (min-width:992px){
 
+    #Navegator{
+        display: flex;
+        justify-content: center;
+    }
     #NavList{
+        
         display: flex;
         flex-direction:row ;
         justify-content: center;
         align-items: center;
-        background-color: gray;
+        background-color: $color-fondo_navegador;
+        margin: 1%;
         .NavegatorList{
             padding: 1%;
             text-align: center;
             margin: 2%;
+            border-radius: 10px;
+            background-color: gray;
                 .NavegatorList:hover{
                     width: 20%;
                 }
             }
                 
-        
     }
+
+        #IndexMain{
+            height: 800px;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 20% 40% 40%;
+            grid-template-areas: "a0 a0"
+                                "a1 a2"
+                                "a3 a2";
+
+             #cardBox{
+                 grid-area: a1;
+             }
+             #cardBox2{
+                 grid-area: a3;
+             }
+             #IndexMainTitle{
+                 text-align: center;
+             }
+             #textAlignment{
+                 grid-area: a2;
+             }
+        }
+
 
         .Footer{
             
